@@ -16,28 +16,52 @@ html {
 body {
     background-color: gray;
     font-family: sans-serif;
-    margin: 0;
     display: grid;
     height: 100vh;
+    margin: 0;
     text-align: center;
     justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    "p"
+    "header"
+    "aside"
+    "main"
+    "footer";
 }
 p {
-    margin-left: auto;
+    margin: 0;
     background: white;
 }
 header {
+    justify-content: center;
+   align-items: center;
    background: white;
 }
 aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: lightgrey;
 }
 main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     background: white;
 }
 footer {
-    background: greenyellow
+    font-size: 400%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: greenyellow;
 }
 img {
     border-radius: 50%;
+}
+#name {
+    font-size: 180%;
 }
