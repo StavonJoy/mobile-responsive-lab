@@ -1,0 +1,43 @@
+
+
+html {
+    box-sizing: border-box
+  }
+ 
+  /* The Universal Selector */
+  *, /* All elements*/
+  *::before, /* All ::before pseudo-elements */
+  *::after { /* All ::after pseudo-elements */
+    /* height & width will now include border & padding by default
+       but can be over-ridden as needed */
+    box-sizing: inherit;
+  }
+  
+body {
+    background-color: gray;
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    justify-content: center;
+}
+p {
+    margin-left: auto;
+    background: white;
+}
+header {
+   background: white;
+}
+aside {
+    background: lightgrey;
+}
+main {
+    background: white;
+}
+footer {
+    background: greenyellow
+}
+img {
+    border-radius: 50%;
+}
